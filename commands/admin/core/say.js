@@ -4,7 +4,7 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'say',
-    description: 'Mengirim, mengedit, atau menghapus pesan.',
+    description: 'Mengirim, mengedit, atau menghapus pesan as bot',
     async execute(message, args) {
         // Cek izin pengguna menggunakan handler
         if (!checkPermission(message)) {
@@ -148,7 +148,7 @@ module.exports = {
 
 
 
-// Fungsi untuk membuat pesan embed error
+// Fungsi untuk membuat pesan embed error dan help
 function createEmbedErrorEmbed(description) {
     return new MessageEmbed({
         title: "Command error!",
